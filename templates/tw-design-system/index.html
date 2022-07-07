@@ -5,9 +5,165 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Design Systems-Tailwind</title>
+    <!-- GOOGLE FONTS -->
+
+    <!-- TAILWIND CSS + CUSTOM CSS(./input.css) -->
     <link rel="stylesheet" href="./develop/css/main.css" />
+    <!-- For aiding with layout -->
+    <style>
+      * {
+        border: 1px solid black;
+      }
+      body {
+        border: none;
+      }
+      section {
+        border-color: limegreen;
+      }
+      div {
+        border-color: red;
+      }
+    </style>
   </head>
-  <body>
-    <h1 class="text-9xl text-red-400">Design Systems-Tailwind</h1>
+  <!-- theme bg goes on body -->
+  <body style="background-color: transparent">
+    <!-- 
+  NOTE: TAILWIND IS A MOBILE FIRST FRAMEWORK BUT THIS TEMPLATE WAS DONE ONLY WITH DESKTOP CONSIDERATIONS IN MIND THUS ON SMALLER SCREEN SIZES, IT BREAKS
+-->
+
+    <!-- HEADER -->
+    <header
+      class="flex items-center justify-between container mx-auto px-40 mb-20"
+      id="section--header"
+    >
+      <!-- Logo -->
+      <!-- the outer div is incase the logo is an image -->
+      <!-- These need to be styled in the same manner as the project they belong to for desktop size -->
+      <div>
+        <div id="logo">skilled</div>
+      </div>
+      <h1 class="text-4xl">design system</h1>
+    </header>
+
+    <!-- COLOR SECTION -->
+    <section class="container mx-auto px-40 mb-20" id="section--colors">
+      <h2 class="text-4xl mb-14">Color</h2>
+      <!-- color pallette container -->
+      <div class="flex flex-wrap gap-x-7 gap-y-10">
+        <!-- color -->
+        <div>
+          <div class="h-28 w-60 rounded-lg bg-orange-700"></div>
+          <p class="text-2xl font-extrabold mt-6">#13183F</p>
+        </div>
+        <!-- color -->
+        <div>
+          <div class="h-28 w-60 rounded-lg bg-amber-500"></div>
+          <p class="text-2xl font-extrabold mt-6">#13183F</p>
+        </div>
+        <!-- color -->
+        <div>
+          <div class="h-28 w-60 rounded-lg bg-lime-500"></div>
+          <p class="text-2xl font-extrabold mt-6">#13183F</p>
+        </div>
+        <!-- color -->
+        <div>
+          <div class="h-28 w-60 rounded-lg bg-teal-500"></div>
+          <p class="text-2xl font-extrabold mt-6">#13183F</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TYPOGRAPHY SECTION -->
+    <!-- the typography naturally will be different for each project thus the specifics will need to be added manually -->
+    <section class="container mx-auto px-40 mb-20" id="section--typography">
+      <h2 class="text-4xl my-10">Typography</h2>
+      <!-- typography sub-section -->
+      <div class="flex gap-x-7">
+        <!-- Left Side -->
+        <div id="left-side basis-1/2">
+          <!-- Heading XL -->
+          <div>
+            <!-- uniform header -->
+            <div class="my-4">
+              Heading XL | Font Family/Weight | Font Size | Line Height
+            </div>
+            <!-- actual typography being used -->
+            <div class="text-6xl font-extrabold">Extra Large Heading Text</div>
+          </div>
+
+          <!-- Heading L -->
+          <div>
+            <!-- uniform header -->
+            <div class="my-4">
+              Heading L | Font Family/Weight | Font Size | Line Height
+            </div>
+            <!-- actual typography being used -->
+            <div class="text-4xl font-extrabold">Large Heading Text</div>
+          </div>
+
+          <!-- Heading M -->
+          <div>
+            <!-- uniform header -->
+            <div class="my-4">
+              Heading M | Font Family/Weight | Font Size | Line Height
+            </div>
+            <!-- actual typography being used -->
+            <div class="text-3xl font-extrabold">Medium Heading Text</div>
+          </div>
+
+          <!-- Heading S -->
+          <div>
+            <!-- uniform header -->
+            <div class="my-4">
+              Heading S | Font Family/Weight | Font Size | Line Height
+            </div>
+            <!-- actual typography being used -->
+            <div class="text-2xl font-extrabold">Small Heading Text</div>
+          </div>
+        </div>
+
+        <!-- Right Side -->
+        <div class="basis-1/2" id="right-side">
+          <!-- Body M -->
+          <div>
+            <!-- uniform header -->
+            <div class="my-4">
+              Body M | Font Family/Weight | Font Size | Line Height
+            </div>
+            <p class="text-lg">
+              Donec nec justo eget felis facilisis fermentum. Aliquam porttitor
+              mauris sit amet orci. Aenean dignissim pellentesque felis. Donec
+              nec justo eget felis facilisis fermentum. Aliquam porttitor mauris
+              sit amet orci. Aenean dignissim pellentesque felis.Donec nec justo
+              eget felis facilisis fermentum. Aliquam porttitor mauris sit amet
+              orci.
+            </p>
+          </div>
+
+          <!-- Body S -->
+          <div>
+            <!-- uniform header -->
+            <div class="my-4">
+              Body S | Font Family/Weight | Font Size | Line Height
+            </div>
+            <p>
+              Donec nec justo eget felis facilisis fermentum. Aliquam porttitor
+              mauris sit amet orci. Aenean dignissim pellentesque felis. Donec
+              nec justo eget felis facilisis fermentum. Aliquam porttitor mauris
+              sit amet orci. Aenean dignissim pellentesque felis.Donec nec justo
+              eget felis facilisis fermentum. Aliquam porttitor mauris sit amet
+              orci.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPONENTS SECTION -->
+    <!-- this one will vary a lot for each project thus it must be done on the spot -->
+    <section class="container mx-auto px-40 mb-20" id="section--components">
+      <h2 class="text-4xl my-10">Components</h2>
+    </section>
   </body>
 </html>
+
