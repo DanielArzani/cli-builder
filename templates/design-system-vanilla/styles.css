@@ -1,0 +1,274 @@
+/* reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* will create a uniform container */
+body {
+  height: 100vh;
+  margin: 0 auto;
+  width: 90%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+/**----------------------
+ **     UTILITIES
+ **--------------------**/
+.secondary-title {
+  color: gray;
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 513px) {
+  .secondary-title {
+    text-align: center;
+  }
+}
+
+/**----------------------
+ **       HEADER
+ **--------------------**/
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.project-title {
+  font-size: 2.25rem;
+  font-weight: 800;
+}
+
+.text__design-system {
+  justify-self: end;
+
+  color: grey;
+  font-size: 2.25rem;
+  font-weight: 800;
+}
+
+@media only screen and (max-width: 513px) {
+  .header {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .text__design-system {
+    justify-self: auto;
+
+    color: grey;
+    font-size: 2.25rem;
+    font-weight: 800;
+  }
+}
+
+/**----------------------
+ **   COLOR PALLETTE
+ **--------------------**/
+
+.color {
+  margin-bottom: 3rem;
+}
+
+.color-pallette {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  row-gap: 1rem;
+}
+
+.color-pallette__block {
+  border-radius: 10px;
+  height: 7.8125rem;
+  padding: 1rem;
+  width: 14.0625rem;
+}
+
+.color-pallette__hexa {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+@media only screen and (max-width: 1015px) {
+  .color-pallette {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    row-gap: 1rem;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  .color-pallette {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    row-gap: 1rem;
+  }
+}
+
+@media only screen and (max-width: 513px) {
+  .color-pallette {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    row-gap: 1rem;
+  }
+}
+
+/**----------------------
+ ** TYPOGRAPHY PALLETTE
+ **--------------------**/
+
+.typography {
+  margin-bottom: 3rem;
+}
+
+.typography-pallette {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 1rem;
+}
+
+.typography-pallette__block-wrapper--xl {
+  grid-column: 1 / 2;
+  grid-row: 1;
+}
+
+.typography-pallette__block-wrapper--l {
+  grid-column: 1 / 2;
+  grid-row: 2;
+}
+
+.typography-pallette__block-wrapper--m {
+  grid-column: 1 / 2;
+  grid-row: 3;
+}
+
+.typography-pallette__block-wrapper--s {
+  grid-column: 1 / 2;
+  grid-row: 4;
+}
+
+.typography-pallette__block-wrapper--bm {
+  grid-column: 2 / 3;
+  grid-row: 1;
+}
+
+.typography-pallette__block-wrapper--bs {
+  grid-column: 2 / 3;
+  grid-row: 2 / 4;
+
+  align-self: end;
+}
+
+/* HEADINGS */
+
+.typography-pallette__header--xl {
+  font-size: 3.5rem;
+  font-weight: 800;
+}
+
+.typography-pallette__header--l {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.typography-pallette__header--m {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.typography-pallette__header--s {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+/* BODY */
+.typography-pallette__body--m {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.typography-pallette__body--s {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+@media only screen and (max-width: 769px) {
+  .typography-pallette {
+    grid-template-columns: 100%;
+  }
+
+  .typography-pallette__block-wrapper--xl {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .typography-pallette__block-wrapper--l {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .typography-pallette__block-wrapper--m {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .typography-pallette__block-wrapper--s {
+    grid-column: 1;
+    grid-row: 4;
+  }
+
+  .typography-pallette__block-wrapper--bm {
+    grid-column: 1;
+    grid-row: 5;
+  }
+
+  .typography-pallette__block-wrapper--bs {
+    grid-column: 1;
+    grid-row: 6;
+
+    /* align-self: end; */
+  }
+}
+
+/**----------------------
+ **    COMPONENTS
+ **--------------------**/
+.components {
+  margin-bottom: 5rem;
+}
+
+@media only screen and (max-width: 1015px) {
+}
+
+@media only screen and (max-width: 769px) {
+}
+
+@media only screen and (max-width: 513px) {
+}
